@@ -1,0 +1,4 @@
+%{
+  "git_cli": {:hex, :git_cli, "0.3.0", "a5422f9b95c99483385b976f5d43f7e8233283a47cda13533d7c16131cb14df5", [:mix], [], "hexpm"},
+  "version_tasks": {:hex, :version_tasks, "0.11.3", "b44c4d99f6af76f69b45e36fec87646f6036d362c0902d04e035889a5f280241", [:mix], [{:git_cli, "~> 0.2", [hex: :git_cli, repo: "hexpm", optional: false]}], "hexpm"},
+}

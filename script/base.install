@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+echo '>>> umbrella mix deps.get'
+mix deps.get
+
+echo '>>> umbrella mix compile'
+mix compile
+
+echo '>>> umbrella npm install'
+find apps/* -name assets | xargs npm install --prefix 
+
+echo '>>> umbrella npm deploy - build assets'
+find apps/* -name assets | xargs npm run deploy --prefix 
+
+echo '>>> umbrella mix phx.digest'
+mix phx.digest
+
+echo '>>> umbrella mix test'
+mix test
+
+echo '>>> done'
+echo "Start the server with 'mix phx.server'"
+
