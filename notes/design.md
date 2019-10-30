@@ -4,7 +4,6 @@
 
 - User
 - Channel
-- Schema
 - Docs
 
 

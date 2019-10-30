@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+echo '>>> mix deps.get'
+mix deps.get
+
+echo '>>> mix compile'
+mix compile
+
+echo '>>> npm install'
+npm install --prefix assets
+
+echo '>>> npm deploy - build assets'
+npm run deploy --prefix assets
+
+echo '>>> mix phx.digest'
+mix phx.digest
+
+echo '>>> mix test'
+mix test
+
+echo '>>> done'
+echo "Start the server with 'mix phx.server'"
+
