@@ -1,7 +1,7 @@
 import Config
 
 config :uniflow_web, UniflowWeb.Endpoint,
-  http: [port: 4000],
+  http: [port: 4030],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,

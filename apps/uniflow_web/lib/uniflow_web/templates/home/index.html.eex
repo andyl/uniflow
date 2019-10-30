@@ -1,5 +1,5 @@
 <div class="jumbotron text-center" style='padding: 1em;'>
-  <h1><%= gettext "Welcome to %{name}!", name: "UniflowWeb" %></h1>
+  <h1><%= gettext "Welcome to %{name}!", name: "Uniflow" %></h1>
   <p>Your Generated Phoenix App</p>
 </div>
 

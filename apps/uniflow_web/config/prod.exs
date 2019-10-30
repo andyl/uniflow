@@ -4,8 +4,8 @@ secret_key_base =
   "asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf"
 
 config :uniflow_web, UniflowWeb.Endpoint,
-  url: [host: "localhost", port: 5000],
-  http: [:inet6, port: 5000],
+  url: [host: "localhost", port: 5030],
+  http: [:inet6, port: 5030],
   cache_static_manifest: "priv/static/cache_manifest.json",
   server: true,
   secret_key_base: secret_key_base
