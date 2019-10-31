@@ -27,7 +27,14 @@
           <%= hdr_link(@conn, "DATA", "/data") %>
         </ul>
         <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
-          <%= hdr_link(@conn, "ASDF", "/asdf") %>
+          <%= hdr_link(@conn, "HOME",   "/") %>
+          <%= hdr_link(@conn, "NEWS",   "/news") %>
+          <%= if @current_user do %>
+            <%= logout_link(@conn, @current_user) %>
+          <% else %>
+            <%= hdr_link(@conn, "LOGIN",  "/sessions/new") %>
+            <%= hdr_link(@conn, "SIGNUP", "/users/new") %>
+          <% end %>
         </ul>
       </div>
       </nav>

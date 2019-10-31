@@ -2,7 +2,7 @@ import Config
 
 config :uniflow_web, UniflowWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "6an/66UtrIziKo/2Z2xOQxsthopQRkXMcWmMM11a1KIZT7M",
+  secret_key_base: "6ansadfasdfasdfasdfasdfasdfasdfasdfasdfsadfasdfasdfxsthopQRkXMcWmMM11a1KIZT7M",
   render_errors: [view: UniflowWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: UniflowWeb.PubSub, adapter: Phoenix.PubSub.PG2],
   live_view: [signing_salt: "SECRETKEYWORD"]
